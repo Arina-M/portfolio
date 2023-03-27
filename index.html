@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+          integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu-header">
+                <nav class="nav-menu">
+                    <ul class="header__menu-list list">
+                        <li class="header__menu-list-item"><a href="./index.html" class="header__menu-item-link current" rel="noopener noreferrer nofolow">Profile</a></li>
+                        <li class="header__menu-list-item"><a href="./projects.html" class="header__menu-item-link" rel="noopener noreferrer nofolow">Projects</a></li>
+                        <li class="header__menu-list-item"><a href="./contacts.html" class="header__menu-item-link" rel="noopener noreferrer nofolow">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <button class="burger-menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="burger-menu-icon js-open-menu" width="32" height="22">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+
+
+                </button>
+            </div>
+
+            <div class="mobile-menu js-menu-container">
+                <div class="mobile-menu-container">
+                    <button class="mobile-menu-close js-close-menu">
+                        <svg class="mobile-menu-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-modal-button"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile-menu-nav">
+                        <ul class="mobile-navigation-list list">
+                            <li class="mobile-navigation-item">
+                                <a class="mobile-navigation-link current" href="index.html" rel="noopener noreferrer nofolow">Profile</a>
+                            </li>
+                            <li class="mobile-navigation-item">
+                                <a class="mobile-navigation-link" href="projects.html" rel="noopener noreferrer nofolow">Projects</a>
+                            </li>
+                            <li class="mobile-navigation-item">
+                                <a class="mobile-navigation-link" href="contacts.html" rel="noopener noreferrer nofolow">Contacts</a>
+                            </li>
+                        </ul>
+                        <ul class="mobile-contact-list list">
+                            <li class="mobile-contact__phone-item">
+                                <a href="tel:+380996138514" class="mobile-contact__phone-link " rel="noopener noreferrer nofolow">+38(099)-613-85-14</a>
+                            </li>
+                            <li class="mobile-contact__email-item">
+                                <a href="mailto:arina.miahkykh@gmail.com" class="mobile-contact__email-link " rel="noopener noreferrer nofolow">arina.maihkykh@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="square-element__top"></div>
+            <div class="hero__content">
+                <div class="hero__photo">
+                    <div class="bg-hero-photo"></div>
+                </div>
+                <div class="hero__title">
+                    <p class="hero__name">ARINA</p>
+                    <p class="hero__surname">MIAHKYKH</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./js/mobile-menu.js"></script>
+<!--    <script src="./js/modal.js"></script>-->
+</body>
+</html>
