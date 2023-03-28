@@ -295,24 +295,46 @@ a{
   letter-spacing: 0.07em;
 }
 
-@media screen and (min-width: 560px){
+@media screen and (min-width: 700px){
+  .square-element__top {
+    width: 274px;
+    height: 250px;
+  }
+
+  .bg-hero-photo{
+    width: 465px;
+    height: 383px;
+  }
+
+  .hero{
+    padding-top: 93px;
+  }
+
+  .hero__name, .hero__surname{
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 890px) {
+
+  .bg-hero-photo{
+    width: 778px;
+    height: 530px;
+  }
+
   .square-element__top {
     width: 415px;
     height: 374px;
   }
 
-  .bg-hero-photo{
-    width: 778px;
-    height: 534px;
-  }
-
   .hero{
-    padding-top: 150px;
+    padding-top: 120px;
   }
 
   .hero__name, .hero__surname{
     font-size: 60px;
   }
+
 }
 
 .hero__content{
@@ -321,11 +343,84 @@ a{
 
 .hero__title {
   position: absolute;
-  top: -27px;
-  left: 0px;
+  top: -28px;
+  left: 0;
   z-index: 5;
 }
 
 .hero__surname{
   margin-left: 63px;
+}
+
+@media screen and (min-width: 768px){
+  .hero__surname {
+    margin-left: 0;
+  }
+
+  .hero__title {
+    top: 65px;
+    left: 100px;
+  }
+
+}
+
+@media screen and (min-width: 890px){
+  .hero__title {
+    top: 65px;
+    left: 100px;
+  }
+}
+
+
+.hero__role{
+  font-size: 16px;
+  line-height: 0.8;
+  letter-spacing: 0.05em;
+  color: var(--color-black);
+  position: absolute;
+  top: 143px;
+  left: 20px;
+  z-index: 7;
+}
+
+@media screen and (min-width: 768px){
+  .hero__role{
+    top: 236px;
+    left: 104px;
+  }
+}
+
+@media screen and (min-width: 890px){
+  .hero__role{
+    top: 350px;
+    left: 104px;
+    font-size: 25px;
+  }
+}
+
+.hero__projects_btn{
+  border: transparent;
+  background-color: var(--color-pink);
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: var(--color-black);
+  transition: background-color 250ms var(--transition),
+  color 250ms var(--transition);
+  padding: 21px 28px;
+  position: absolute;
+  bottom: 0;
+  left: 65px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hero__projects_btn:hover,
+.hero__projects_btn:focus{
+  color: var(--color-white);
+  //background-color: var(--color-dark-pink);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition:  250ms var(--transition);
 }
